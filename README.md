@@ -1,0 +1,2 @@
+# diploBot
+ Discord bot
