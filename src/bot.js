@@ -29,7 +29,6 @@ client.on("messageDeleteBulk", (messages, channel) => {
       iconURL:
         "https://cdn.discordapp.com/avatars/1002577938253873312/5531369ddca2439247cf97021fb452ca.webp",
     })
-    .setTitle("🔨 Message Bulk Delete")
     .setColor(0x4bb7f6)
     .setDescription(
       `**🧹 Bulk delete in ${channel}, ${messages.size} messages deleted.**`
