@@ -124,6 +124,27 @@ client.on('guildMemberAdd', (member) => {
     embeds: [guildUpdate],
   });
 });
+
+client.on('guildBanAdd', (ban) => {
+  const LogChannel = client.channels.cache.get("989137058641612858"); // Replace with your channel id
+  const guildBanAdd = new EmbedBuilder()
+    .setAuthor({
+      name: "Diplo Logging System",
+      iconURL:
+        "https://cdn.discordapp.com/avatars/1002577938253873312/5531369ddca2439247cf97021fb452ca.webp",
+    })
+    .setTitle("🏕️ Member Ban")
+    .setColor(0x4bb7f6)
+    .setDescription(`*A member has been banned.*`)
+    .addFields(
+      { name: 'Ban', value: `${ban}`, inline: true },
+    )
+    .setTimestamp();
+
+  return LogChannel.send({
+    embeds: [guildBanAdd],
+  });
+});
 //Logging System End
 
 const functionsFolders = fs.readdirSync(`./src/functions`);
