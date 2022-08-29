@@ -20,6 +20,9 @@ client.selectMenus = new Collection();
 client.modals = new Collection();
 client.commandArray = [];
 
+/* Giveaway System */
+require('./Systems/giveawaySystem')(client);
+
 //Logging System Start
 client.on("messageDeleteBulk", (messages, channel) => {
   const LogChannel = client.channels.cache.get("989137058641612858"); // Replace with your channel id
