@@ -4,7 +4,7 @@
     "description": "",
     "main": "src/bot.js",
     "scripts": {
-        "test": "node ."
+        "test": "jest"
     },
     "keywords": [],
     "author": "Blin",
@@ -13,6 +13,7 @@
         "@discordjs/rest": "^1.0.1",
         "chalk": "^4.1.2",
         "discord-api-types": "^0.37.0",
+        "discord-giveaways": "^6.0.1",
         "discord.js": "^14.1.1",
         "dotenv": "^16.0.1",
         "moment": "^2.29.4",
@@ -21,8 +22,5 @@
     },
     "devDependencies": {
         "jest": "^29.0.1"
-    },
-    "scripts": {
-        "test": "jest"
-      }
+    }
 }
